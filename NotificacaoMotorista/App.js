@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View, ImageBackground, TouchableOpacity } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome'; // Biblioteca de ícones
-import backgroundImage from './assets/background.png'; // Caminho para a imagem
+import Icon from 'react-native-vector-icons/FontAwesome';
+import backgroundImage from './assets/background.png'; 
 
 export default function App() {
   return (
     <ImageBackground
-      source={backgroundImage} // Usando a imagem importada
+      source={backgroundImage}
       style={styles.background}
     >
       <View style={styles.header}>
@@ -37,13 +37,13 @@ const styles = StyleSheet.create({
   },
   header: {
     position: 'absolute',
-    top: 50, // Ajuste conforme necessário para a margem superior
+    top: 50, 
     left: 20,
     flexDirection: 'row',
     alignItems: 'center',
   },
   backButton: {
-    marginRight: 40, // Espaço entre o emoji e o texto
+    marginRight: 40, 
   },
   backButtonText: {
     fontSize: 24,
@@ -56,20 +56,20 @@ const styles = StyleSheet.create({
   },
   container: {
     position: 'absolute',
-    top: 120, // Ajuste para ficar logo abaixo do cabeçalho
+    top: 120, 
     left: 20,
   },
   textContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 40, // Espaço entre os textos
+    marginBottom: 40, 
   },
   icon: {
     marginRight: 30,
     marginLeft: 30,
   },
   infoText: {
-    color: '#ffffff', // Cor preta para o texto
+    color: '#ffffff', 
     fontSize: 22,
   },
 });
